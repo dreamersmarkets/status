@@ -1,31 +1,67 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# Upptime config - all four brands
+# Docs: https://upptime.js.org/docs/configuration
+#
+# NOTE: `owner` must match the GitHub account/org where you create this repo.
+# Change it if you push to a personal account instead of the dreamersmarkets org.
+owner: dreamersmarkets
+repo: status
 
+# All checks use HEAD so monitoring costs ~zero Vercel bandwidth.
+# (10 sites x ~288 checks/day = ~2,880 requests/day - with GET that would pull
+# full page bodies against an already-strained Fast Data Transfer quota.)
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  # --- Pastaphony ---
+  - name: Pastaphony - website
+    url: https://www.pastaphony.com
+    method: HEAD
+  - name: Pastaphony - API
+    url: https://pastaphony-api.vercel.app
+    method: HEAD
+
+  # --- OniGuru ---
+  - name: OniGuru - website
+    url: https://www.onigururestaurant.com
+    method: HEAD
+  - name: OniGuru - API
+    url: https://oniguru-api.vercel.app
+    method: HEAD
+  - name: OniGuru - legacy site (old.)
+    url: https://old.onigururestaurant.com
+    method: HEAD
+
+  # --- Dreamers Markets ---
+  - name: Dreamers Markets - website
+    url: https://www.dreamersmarkets.com
+    method: HEAD
+  - name: Dreamers Markets - vendor intake (Wix)
+    url: https://dm.dreamersmarkets.com
+    method: HEAD
+  - name: Dreamers Marketplace - storefront
+    url: https://shop.dreamersmarkets.com
+    method: HEAD
+  - name: Dreamers - shop portal
+    url: https://shopportal.dreamersmarkets.com
+    method: HEAD
+
+  # --- Grandpa Coffee Bar ---
+  - name: Grandpa Coffee Bar - website
+    url: https://grandpacoffeebar.com
+    method: HEAD
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  # Publishes to https://<owner>.github.io/status via GitHub Pages.
+  # Swap for `cname: status.dreamersmarkets.com` if you want a custom domain
+  # (DNS is API-editable at Wix, so that can be automated later).
+  baseUrl: /status
+  name: Service status
+  introTitle: "Live status for Pastaphony, OniGuru, Dreamers Markets, and Grandpa Coffee Bar."
+  introMessage: Automated uptime checks roughly every 5 minutes. No server required - powered entirely by GitHub Actions.
   navbar:
     - title: Status
       href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+# Alerts: add a NOTIFICATION_DISCORD_WEBHOOK_URL repo secret (Settings -> Secrets -> Actions).
+# Downtime also opens a GitHub Issue automatically even without this block.
+notifications:
+  - type: discord
+    webhook: "$NOTIFICATION_DISCORD_WEBHOOK_URL"
