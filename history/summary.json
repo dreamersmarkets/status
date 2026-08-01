@@ -112,19 +112,19 @@
     "url": "https://dm.dreamersmarkets.com",
     "icon": "https://icons.duckduckgo.com/ip3/dm.dreamersmarkets.com.ico",
     "slug": "dreamers-markets-vendor-intake-wix",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.99%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 243,
-    "timeDay": 464,
-    "timeWeek": 245,
-    "timeMonth": 243,
-    "timeYear": 243,
+    "status": "up",
+    "uptime": "99.48%",
+    "uptimeDay": "95.53%",
+    "uptimeWeek": "99.36%",
+    "uptimeMonth": "99.48%",
+    "uptimeYear": "99.48%",
+    "time": 372,
+    "timeDay": 866,
+    "timeWeek": 404,
+    "timeMonth": 372,
+    "timeYear": 372,
     "dailyMinutesDown": {
-      "2026-08-01": 0
+      "2026-08-01": 64
     }
   },
   {
