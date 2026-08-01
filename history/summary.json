@@ -112,18 +112,20 @@
     "url": "https://dm.dreamersmarkets.com",
     "icon": "https://icons.duckduckgo.com/ip3/dm.dreamersmarkets.com.ico",
     "slug": "dreamers-markets-vendor-intake-wix",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 182,
-    "timeDay": 143,
-    "timeWeek": 168,
-    "timeMonth": 182,
-    "timeYear": 182,
-    "dailyMinutesDown": {}
+    "time": 243,
+    "timeDay": 464,
+    "timeWeek": 245,
+    "timeMonth": 243,
+    "timeYear": 243,
+    "dailyMinutesDown": {
+      "2026-08-01": 0
+    }
   },
   {
     "name": "Dreamers Marketplace - storefront",
