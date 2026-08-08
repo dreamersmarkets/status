@@ -42,6 +42,17 @@ sites:
   - name: Dreamers - shop portal
     url: https://shopportal.dreamersmarkets.com
     method: HEAD
+  # The cron-fleet dead-man's switch. heartbeat-check runs ON Vercel, so it
+  # cannot detect its own platform failing — this GET returns 503 when any
+  # operator-portal cron has gone stale (invoice reminders, Square
+  # reconcile, nightly backup...). Monitoring it from GitHub Actions puts
+  # the judgement outside Vercel's failure domain. Read-only and public by
+  # design: it exposes cron names and staleness, no secrets, and cannot
+  # trigger a cron. GET (not HEAD) because the status code depends on the
+  # computed body.
+  - name: Dreamers - portal cron fleet
+    url: https://portal.dreamersmarkets.com/api/cron-liveness
+    method: GET
 
   # --- Grandpa Coffee Bar ---
   - name: Grandpa Coffee Bar - website
