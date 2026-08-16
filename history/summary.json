@@ -168,18 +168,20 @@
     "url": "https://portal.dreamersmarkets.com/api/cron-liveness",
     "icon": "https://icons.duckduckgo.com/ip3/portal.dreamersmarkets.com.ico",
     "slug": "dreamers-portal-cron-fleet",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 1109,
-    "timeDay": 324,
-    "timeWeek": 1189,
-    "timeMonth": 1109,
-    "timeYear": 1109,
-    "dailyMinutesDown": {}
+    "time": 1020,
+    "timeDay": 274,
+    "timeWeek": 1068,
+    "timeMonth": 1020,
+    "timeYear": 1020,
+    "dailyMinutesDown": {
+      "2026-08-16": 0
+    }
   },
   {
     "name": "Grandpa Coffee Bar - website",
