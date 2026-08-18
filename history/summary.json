@@ -168,20 +168,21 @@
     "url": "https://portal.dreamersmarkets.com/api/cron-liveness",
     "icon": "https://icons.duckduckgo.com/ip3/portal.dreamersmarkets.com.ico",
     "slug": "dreamers-portal-cron-fleet",
-    "status": "up",
-    "uptime": "90.18%",
-    "uptimeDay": "81.36%",
-    "uptimeWeek": "86.18%",
-    "uptimeMonth": "90.18%",
-    "uptimeYear": "90.18%",
-    "time": 913,
-    "timeDay": 828,
-    "timeWeek": 856,
-    "timeMonth": 913,
-    "timeYear": 913,
+    "status": "down",
+    "uptime": "90.37%",
+    "uptimeDay": "95.11%",
+    "uptimeWeek": "86.17%",
+    "uptimeMonth": "90.37%",
+    "uptimeYear": "90.37%",
+    "time": 872,
+    "timeDay": 819,
+    "timeWeek": 806,
+    "timeMonth": 872,
+    "timeYear": 872,
     "dailyMinutesDown": {
       "2026-08-17": 365,
-      "2026-08-16": 1028
+      "2026-08-16": 1028,
+      "2026-08-18": 0
     }
   },
   {
