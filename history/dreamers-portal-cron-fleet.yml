@@ -1,7 +1,7 @@
 url: https://portal.dreamersmarkets.com/api/cron-liveness
-status: down
-code: 503
-responseTime: 227
-lastUpdated: 2026-08-18T23:28:18.992Z
+status: up
+code: 200
+responseTime: 446
+lastUpdated: 2026-08-19T16:13:46.419Z
 startTime: 2026-08-08T05:07:55.672Z
 generator: Upptime <https://github.com/upptime/upptime>
