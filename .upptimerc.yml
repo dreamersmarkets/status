@@ -59,6 +59,44 @@ sites:
     url: https://grandpacoffeebar.com
     method: HEAD
 
+  # --- Square Online storefronts (added 2026-09-23, audit CRIT-01) ---
+  - name: Pastaphony - Anaheim storefront
+    url: https://pastaphonyanaheim.square.site
+    method: HEAD
+  - name: Pastaphony - Carlsbad storefront
+    url: https://pastaphonycarlsbad.square.site
+    method: HEAD
+  - name: Pastaphony - Fullerton storefront
+    url: https://pastaphonyfullerton.square.site
+    method: HEAD
+  - name: Pastaphony - Glendora storefront
+    url: https://pastaphonyglendora.square.site
+    method: HEAD
+  - name: Pastaphony - Long Beach storefront
+    url: https://pastaphonylongbeach.square.site
+    method: HEAD
+  - name: Pastaphony - Rodeo 39 storefront
+    url: https://pastaphonyrodeo39.square.site
+    method: HEAD
+  - name: Pastaphony - Tustin storefront
+    url: https://pastaphonytustin.square.site
+    method: HEAD
+  - name: Pastaphony - Huntington Beach storefront (coming soon)
+    url: https://pastaphonyhb.square.site
+    method: HEAD
+  - name: OniGuru - Garden Grove storefront
+    url: https://oniguru-gardengrove.square.site
+    method: HEAD
+  - name: OniGuru - Mission Viejo storefront
+    url: https://oniguru-missionviejo.square.site
+    method: HEAD
+  - name: OniGuru - Ladera Ranch storefront (arcek)
+    url: https://www.arcekrestaurants.com
+    method: HEAD
+  - name: Grandpa Coffee Bar - storefront
+    url: https://grandpacoffeelb.square.site
+    method: HEAD
+
 status-website:
   # Publishes to https://<owner>.github.io/status via GitHub Pages.
   # Swap for `cname: status.dreamersmarkets.com` if you want a custom domain
