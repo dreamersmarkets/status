@@ -108,6 +108,19 @@ status-website:
   navbar:
     - title: Status
       href: /
+  # Keeps the home page from jumping while it loads (audit PERF-11, CLS was
+  # 0.24-0.48). The incident/maintenance blocks show a spinner, then collapse
+  # to nothing or swap in "All systems operational", which shoved the monitor
+  # list around. These rules hide those spinners, reserve the 58px the "All
+  # systems operational" box takes, and give the monitor list a full screen
+  # of room while it loads. Scoped to the home page with :has(), so the
+  # history pages keep their spinners. Browsers without :has() ignore it.
+  css: |
+    main:has(> section.live-status) > section:not(.live-status) > .loading { display: none; }
+    main:has(> section.live-status) > header + section:has(> .loading) { min-height: calc(3.5rem + 2px); }
+    section.live-status:has(> .loading) { min-height: 100vh; }
+    section.live-status > .loading { margin-top: 0; }
+    img.icon { width: 1rem; height: 1rem; }
 
 # Alerts: add a NOTIFICATION_DISCORD_WEBHOOK_URL repo secret (Settings -> Secrets -> Actions).
 # Downtime also opens a GitHub Issue automatically even without this block.
