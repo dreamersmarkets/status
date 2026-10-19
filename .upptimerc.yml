@@ -18,8 +18,13 @@ sites:
   - name: Pastaphony - website
     url: https://www.pastaphony.com
     method: HEAD
+  # The two API checks hit /api/locations with a random query string. The
+  # project root is a static page the CDN serves from cache for days, so it
+  # stayed green even if every function failed (audit PIPE-07). The random
+  # value skips the CDN copy, so the function runs (read-only: it reads the
+  # store list and the Redis connection records). HEAD, so no body comes back.
   - name: Pastaphony - API
-    url: https://pastaphony-api.vercel.app
+    url: https://pastaphony-api.vercel.app/api/locations?uptime=$DYNAMIC_RANDOM_NUMBER
     method: HEAD
 
   # --- OniGuru ---
@@ -27,7 +32,7 @@ sites:
     url: https://www.onigururestaurant.com
     method: HEAD
   - name: OniGuru - API
-    url: https://oniguru-api.vercel.app
+    url: https://oniguru-api.vercel.app/api/locations?uptime=$DYNAMIC_RANDOM_NUMBER
     method: HEAD
   - name: OniGuru - legacy site (old.)
     url: https://old.onigururestaurant.com
