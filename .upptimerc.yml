@@ -9,6 +9,10 @@ repo: status
 # All checks use HEAD so monitoring costs ~zero Vercel bandwidth.
 # (10 sites x ~288 checks/day = ~2,880 requests/day - with GET that would pull
 # full page bodies against an already-strained Fast Data Transfer quota.)
+#
+# Cadence: Uptime CI is scheduled */5, but GitHub only starts it every few
+# hours (median gap 3.4 h, worst 9.6 h in Oct 2026; it was ~30 min in
+# August). Don't count on this repo to notice anything fast (audit PIPE-06).
 sites:
   # --- Pastaphony ---
   - name: Pastaphony - website
@@ -104,7 +108,7 @@ status-website:
   baseUrl: /status
   name: Service status
   introTitle: "Live status for Pastaphony, OniGuru, Dreamers Markets, and Grandpa Coffee Bar."
-  introMessage: Automated uptime checks roughly every 5 minutes. No server required - powered entirely by GitHub Actions.
+  introMessage: Automated checks run several times a day through GitHub Actions.
   navbar:
     - title: Status
       href: /
