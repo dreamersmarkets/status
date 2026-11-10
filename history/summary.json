@@ -200,6 +200,24 @@
     }
   },
   {
+    "name": "Dreamers - www event bake",
+    "url": "https://www.dreamersmarkets.com/api/bake-health",
+    "icon": "https://icons.duckduckgo.com/ip3/www.dreamersmarkets.com.ico",
+    "slug": "dreamers-www-event-bake",
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 160,
+    "timeDay": 160,
+    "timeWeek": 160,
+    "timeMonth": 160,
+    "timeYear": 160,
+    "dailyMinutesDown": {}
+  },
+  {
     "name": "Grandpa Coffee Bar - website",
     "url": "https://grandpacoffeebar.com",
     "icon": "https://icons.duckduckgo.com/ip3/grandpacoffeebar.com.ico",
