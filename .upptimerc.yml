@@ -53,6 +53,13 @@ sites:
   - name: Dreamers - portal cron fleet
     url: https://portal.dreamersmarkets.com/api/cron-liveness
     method: GET
+  # The www event bake (Nov 9 audit, BP-01). 503 when the daily 06:00 PT rebuild was
+  # missed, when its bake failed, or when no build has read the live market data for
+  # 72 h (every build since fell back to an earlier copy). Small JSON, no secrets;
+  # GET for the same reason as cron-liveness.
+  - name: Dreamers - www event bake
+    url: https://www.dreamersmarkets.com/api/bake-health
+    method: GET
 
   # --- Grandpa Coffee Bar ---
   - name: Grandpa Coffee Bar - website
