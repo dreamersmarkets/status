@@ -14,9 +14,14 @@ sites:
   - name: Pastaphony - website
     url: https://www.pastaphony.com
     method: HEAD
+  # The API's health action, not the project root. The root is a static page the
+  # CDN can serve for days, so that check stayed green even with every function
+  # down. This one makes a function run and goes by its status code: 200 when
+  # healthy, never cached, a few bytes of JSON with no Square or customer data.
+  # GET because a function has to run. (Nov 22 audit PPAPI-04, finishes PIPE-07.)
   - name: Pastaphony - API
-    url: https://pastaphony-api.vercel.app
-    method: HEAD
+    url: https://pastaphony-api.vercel.app/api/notifications?action=health
+    method: GET
 
   # --- OniGuru ---
   - name: OniGuru - website
