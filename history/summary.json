@@ -19,7 +19,7 @@
   },
   {
     "name": "Pastaphony - API",
-    "url": "https://pastaphony-api.vercel.app",
+    "url": "https://pastaphony-api.vercel.app/api/notifications?action=health",
     "icon": "https://icons.duckduckgo.com/ip3/pastaphony-api.vercel.app.ico",
     "slug": "pastaphony-api",
     "status": "up",
@@ -169,11 +169,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/portal.dreamersmarkets.com.ico",
     "slug": "dreamers-portal-cron-fleet",
     "status": "up",
-    "uptime": "89.68%",
+    "uptime": "89.73%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
-    "uptimeYear": "89.68%",
+    "uptimeYear": "89.73%",
     "time": 796,
     "timeDay": 858,
     "timeWeek": 1530,
@@ -362,7 +362,7 @@
     "dailyMinutesDown": {}
   },
   {
-    "name": "Pastaphony - Huntington Beach storefront (coming soon)",
+    "name": "Pastaphony - Huntington Beach storefront",
     "url": "https://pastaphonyhb.square.site",
     "icon": "https://icons.duckduckgo.com/ip3/pastaphonyhb.square.site.ico",
     "slug": "pastaphony-huntington-beach-storefront-coming-soon",
