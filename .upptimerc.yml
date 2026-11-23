@@ -93,9 +93,14 @@ sites:
   - name: Pastaphony - Tustin storefront
     url: https://pastaphonytustin.square.site
     method: HEAD
-  - name: Pastaphony - Huntington Beach storefront (coming soon)
+  # Huntington Beach opened in late October 2026, so "(coming soon)" is gone
+  # from the name. The slug stays as it was: Upptime names this monitor's
+  # history/, graphs/ and api/ files and its issue label after the slug, so
+  # keeping it keeps the uptime history since Sep 23.
+  - name: Pastaphony - Huntington Beach storefront
     url: https://pastaphonyhb.square.site
     method: HEAD
+    slug: pastaphony-huntington-beach-storefront-coming-soon
   - name: OniGuru - Garden Grove storefront
     url: https://oniguru-gardengrove.square.site
     method: HEAD
